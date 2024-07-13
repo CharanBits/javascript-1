@@ -1,0 +1,258 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    z-index: 999;
+}
+
+.logo a{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo a span{
+    color: orange;
+}
+
+.navlist {
+display: flex;
+}
+
+.navlist a{
+    margin-right: 20px;
+    color: #333;
+    transition: 0.5s ease;
+}
+
+.navlist a:hover{
+    color: orangered;
+}
+
+.nav-icons i{
+   font-size: 22px; 
+   margin-right: 10px;
+   cursor: pointer;
+   transition: .9s ease;
+}
+
+.nav-icons i:hover {
+  color: #9b59b6;
+}
+.menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* home section   */
+
+section{
+    padding: 70px 10%;
+}
+.home{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /*overflow: hidden;*/
+}
+
+.home-text h2{
+    font-size: 30px;
+    color: #333;
+    line-height: 2rem;
+    margin-bottom: 20px;
+
+}
+
+.home-text a{
+    display: inline-flex;
+   padding: 20px 40px;
+   color: #fff;
+   background-color: #9b59b6;
+   border-radius: 6px;
+   transition: .5s ease;
+}
+
+.home-text a:hover{
+padding-right:50px ;
+}
+
+.home-img {
+    display: flex;
+    gap:2rem;
+    position: relative;
+    
+}
+.small-img{
+   display: flex;
+   flex-direction: column;
+    position: absolute;
+    top:20%;
+    right: 0;
+  
+}
+.small-img img {
+    width:80px;
+    height: 80px;
+    object-fit: contain;
+    cursor: pointer;  
+    transition: .5s ease;  
+}
+
+.small-img img:hover{
+    transform: scale(1.2);
+}
+
+/* responsiveness */
+
+/* Media Query for Extra Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    /* Adjustments for header */
+    header {
+        padding: 10px;
+    }
+    
+    .logo a {
+        font-size: 16px;
+    }
+
+    .navlist a {
+        margin-right: 10px;
+    }
+
+    .nav-icons i {
+        font-size: 16px;
+    }
+
+    /* Adjustments for home section */
+    .home-text h2 {
+        font-size: 20px;
+    }
+
+    .home-text a {
+        padding: 10px 20px;
+    }
+
+    .small-img {
+        top: 5%;
+    }
+
+    .small-img img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Media Query for Small Devices (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Adjustments for header */
+    header {
+        padding: 15px 10px;
+    }
+    
+    .logo a {
+        font-size: 18px;
+    }
+    
+    .navlist a {
+        margin-right: 15px;
+    }
+
+    .nav-icons i {
+        font-size: 18px;
+    }
+
+    /* Adjustments for home section */
+    .home {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+    }
+    
+    .home-text h2 {
+        font-size: 24px;
+    }
+
+    .home-text a {
+        padding: 15px 30px;
+    }
+
+    .small-img {
+        top: 10%;
+    }
+
+    .small-img img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Media Query for Medium Devices (Laptops, Desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Adjustments for header */
+    header {
+        padding: 20px 10px;
+    }
+    
+    .logo a {
+        font-size: 20px;
+    }
+    
+    .navlist a {
+        margin-right: 20px;
+    }
+
+    .nav-icons i {
+        font-size: 22px;
+    }
+
+    /* Adjustments for home section */
+    .home {
+        padding: 70px 10%;
+    }
+    
+    .home-text h2 {
+        font-size: 30px;
+    }
+
+    .home-text a {
+        padding: 20px 40px;
+    }
+
+    .small-img {
+        top: 20%;
+    }
+
+    .small-img img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
